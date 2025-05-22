@@ -1,0 +1,4 @@
+05/22/2025 06:16:45 PM - CORE DUMPS: You are running a development version of i3, so coredumps were automatically enabled (ulimit -c unlimited).
+05/22/2025 06:16:45 PM - CORE DUMPS: Your current working directory is "/home/rishi".
+05/22/2025 06:16:45 PM - CORE DUMPS: Your core_pattern is: |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h
+05/22/2025 06:16:45 PM - i3 4.24 starting
