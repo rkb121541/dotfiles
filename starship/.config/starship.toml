@@ -1,0 +1,25 @@
+format = """
+[](#cba6f7)\
+$os\
+[](bg:#45475a fg:#cba6f7)\
+$directory\
+[](fg:#45475a bg:#313244)\
+$git_branch\
+[](fg:#313244 bg:#181825)\
+[ ](fg:#181825)\
+"""
+
+[os]
+style = "bg:#cba6f7 fg:#1e1e2e"
+disabled = false # Disabled by default
+format = "[ 󰣇  ]($style)"
+
+[directory]
+style = "bg:#45475a fg:#f5c2e7"
+format = "[ $path ]($style)"
+
+[git_branch]
+symbol = ""
+style = "bg:#313244 fg:#7f849c"
+format = '[ $symbol $branch ]($style)'
+
