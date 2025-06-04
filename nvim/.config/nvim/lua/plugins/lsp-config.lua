@@ -13,7 +13,7 @@ return {
         ensure_installed = {
           "lua_ls",
           "clangd",
-          -- "cmake"
+          "ts_ls"
         },
       })
     end,
@@ -27,6 +27,9 @@ return {
         capabilities = capabilities
       })
       lspconfig.clangd.setup({
+        capabilities = capabilities
+      })
+      lspconfig.ts_ls.setup({
         capabilities = capabilities
       })
       -- lspconfig.cmake.setup({
