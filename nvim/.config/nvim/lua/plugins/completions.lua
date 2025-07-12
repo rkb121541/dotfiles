@@ -26,7 +26,7 @@ return {
           documentation = cmp.config.window.bordered(),
         },
         mapping = cmp.mapping.preset.insert({
-          ["<C-t>"] = cmp.mapping.complete(),
+          -- ["<C-t>"] = cmp.mapping.complete(),
           ["<C-r>"] = cmp.mapping.abort(),
           ["<C-e>"] = cmp.mapping.confirm({ select = true }),
         }),

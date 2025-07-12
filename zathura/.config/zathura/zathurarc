@@ -1,0 +1,8 @@
+include catppuccin-mocha
+
+set font "MesloLGS Nerd Font Mono Regular 10"
+
+map h feedkeys "<C-Left>"
+map j feedkeys "<C-Down>"
+map k feedkeys "<C-Up>"
+map l feedkeys "<C-Right>"

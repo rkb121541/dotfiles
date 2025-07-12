@@ -8,6 +8,10 @@ fi
 # Created by newuser for 5.9
 
 export EDITOR=nvim
+export ANDROID_HOME=$HOME/android-sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=/usr/lib/jvm/java-24-openjdk
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"

@@ -14,7 +14,7 @@ return {
           "lua_ls",
           "clangd",
           "ts_ls",
-          "pylsp"
+          "pylsp",
         },
       })
     end,
@@ -22,22 +22,25 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.clangd.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.ts_ls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
-      -- lspconfig.cmake.setup({
-      --   capabilities = capabilities
-      -- })
+      lspconfig.pylsp.setup({
+        capabilities = capabilities,
+      })
       vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, {})
+      vim.keymap.set("n", "<leader>r", vim.lsp.buf.references, {})
+      vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {})
     end,
   },
 }
